@@ -317,9 +317,8 @@ class MyFrame1 ( wx.Frame ):
         file_name = 'report.txt'
         output = open(file_name,"w")
         output.write(str(report))
+        self.m_textCtrl12.SetLabel(report)
         output.close()
-
-        self.m_textCtrl12.SetLabel()
 
 
         
